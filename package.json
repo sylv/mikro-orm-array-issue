@@ -1,0 +1,26 @@
+{
+    "name": "mikro-orm-polymorphic-embeddables-array-issue",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "license": "MIT",
+    "scripts": {
+        "start": "ts-node --transpile-only ./src/index.ts"
+    },
+    "dependencies": {
+        "@mikro-orm/core": "^5.0.0-dev.571",
+        "@mikro-orm/sqlite": "^5.0.0-dev.571"
+    },
+    "devDependencies": {
+        "@mikro-orm/cli": "^5.0.0-dev.571",
+        "@tsconfig/node16": "^1.0.2",
+        "@types/node": "^16.10.1",
+        "ts-node": "^10.2.1",
+        "typescript": "^4.4.3"
+    },
+    "mikro-orm": {
+        "useTsNode": true,
+        "configPaths": [
+            "./src/orm.config.ts"
+        ]
+    }
+}
