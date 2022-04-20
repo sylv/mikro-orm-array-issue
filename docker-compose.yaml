@@ -1,0 +1,12 @@
+version: "3"
+services:
+  postgres:
+    container_name: mikro_array_issue_postgres
+    image: postgres:14-alpine
+    restart: unless-stopped
+    ports:
+      - 127.0.0.1:5462:5432
+    environment:
+      - POSTGRES_USER=mikro
+      - POSTGRES_PASSWORD=mikro
+      - POSTGRES_DB=mikro

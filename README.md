@@ -1,6 +1,7 @@
-# mikro-orm-polymorphic-embeddables-array-issue
+# mikro-orm-array-issue
 
-Reproduces an error with polymorphic embeddables as an array in MikroORM v5.
+Reproduces an error with brackets in arrays
 
 - `pnpm install`
+- `docker-compose up -d`
 - `pnpm start`
